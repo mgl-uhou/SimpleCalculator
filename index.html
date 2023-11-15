@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div id="container">
+        <div id="area">
+            <input type="text" readonly> <!-- value="90+150" placeholder="Esse input existe" -->
+        </div> 
+
+        <hr>
+
+        <div class="caracters">
+            <span onclick="clearInput()">C</span>
+            <span style="font-size: 22px; display: flex; align-items: center;">+/-</span>
+            <span>%</span>
+            <span onclick="addCaracters(this.textContent)">/</span>
+        </div>
+
+        <div class="caracters">
+            <span onclick="addCaracters(this.textContent)">7</span>
+            <span onclick="addCaracters(this.textContent)">8</span>
+            <span onclick="addCaracters(this.textContent)">9</span>
+            <span onclick="addCaracters(this.textContent)">*</span>
+        </div>
+
+        <div class="caracters">
+            <span onclick="addCaracters(this.textContent)">4</span>
+            <span onclick="addCaracters(this.textContent)">5</span>
+            <span onclick="addCaracters(this.textContent)">6</span>
+            <span onclick="addCaracters(this.textContent)">-</span>
+        </div>
+
+        <div class="caracters">
+            <span onclick="addCaracters(this.textContent)">1</span>
+            <span onclick="addCaracters(this.textContent)">2</span>
+            <span onclick="addCaracters(this.textContent)">3</span>
+            <span onclick="addCaracters(this.textContent)">+</span>
+        </div>
+
+        <div class="caracters">
+            <span></span>
+            <span>0</span>
+            <span onclick="addCaracters(this.textContent)">.</span>
+            <span onclick="result()">=</span>
+        </div>
+
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
