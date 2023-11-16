@@ -21,6 +21,8 @@ body{
 
     border: none;
     border-radius: 10px;
+
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 hr{
@@ -36,12 +38,15 @@ hr{
     outline: none;
     background: none;
     border: none;
+    min-width: 15px;
+    max-width: 100%;
 
     color: white;
     font-family: 'Inter', sans-serif;
     font-size: 32px;
 
-    direction: rtl;
+    /* direction: rtl; */
+    text-align: right;
 
     margin: 50px 0;
 }

@@ -6,6 +6,7 @@
     <title>Simple Calculator</title>
 
     <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="calculatorIcon.png" type="image/x-icon">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,8 +23,8 @@
 
         <div class="caracters">
             <span onclick="clearInput()">C</span>
-            <span style="font-size: 22px; display: flex; align-items: center;">+/-</span>
-            <span>%</span>
+            <span style="font-size: 22px; display: flex; align-items: center;" onclick="replace()">+/-</span>
+            <span onclick="addCaracters(this.textContent)">^</span>
             <span onclick="addCaracters(this.textContent)">/</span>
         </div>
 
@@ -49,8 +50,8 @@
         </div>
 
         <div class="caracters">
-            <span></span>
-            <span>0</span>
+            <span style="background: none; cursor: default;"></span>
+            <span onclick="addCaracters(this.textContent)">0</span>
             <span onclick="addCaracters(this.textContent)">.</span>
             <span onclick="result()">=</span>
         </div>
