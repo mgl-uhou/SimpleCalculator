@@ -49,10 +49,7 @@ hr{
     margin: 50px 0;
 }
 
-#container .caracters{
-    /* width: 100%; */
-
-    display: flex;
+#container .caracters{display: flex;
     justify-content: space-between;
 
     padding: 0 15px;
